@@ -68,3 +68,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Powerful components to create your forms
+gem "simple_form", "~> 5.1.0"
