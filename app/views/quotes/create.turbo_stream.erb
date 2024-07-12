@@ -1,0 +1,21 @@
+<%= turbo_stream.update Quote.new, '' %>
+
+<%= turbo_stream.prepend "quotes" do %>
+  <%= render partial: 'quote', locals: { quote: @quote } %>
+<% end %>
+
+<%
+=begin%>
+
+  Rails way to make it simpler
+
+  <%= turbo_stream.prepend "quotes", partial: 'quote', locals: { quote: @quote }  %>
+
+  <%= turbo_stream.prepend "quotes" do %>
+    <%= render @quote %>
+  <% end %>
+
+  <%= turbo_stream.prepend "quotes", @quote %>
+
+<%
+=end%>
