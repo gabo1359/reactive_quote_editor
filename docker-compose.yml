@@ -17,6 +17,7 @@ services:
       - .:/app
     depends_on:
       - db
+      - redis
   db:
     image: postgres:latest
     environment:
@@ -30,5 +31,13 @@ services:
     image: selenium/standalone-chrome:96.0
     ports:
       - "7900:7900"
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+    - redis_data:/var/lib/redis/data
+
 volumes:
   postgres_data:
+  redis_data:
