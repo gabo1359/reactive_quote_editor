@@ -67,6 +67,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+
+  # Customizable Minitest output formats
+  gem "minitest-reporters"
 end
 
 # Powerful components to create your forms
