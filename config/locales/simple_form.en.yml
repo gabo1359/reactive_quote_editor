@@ -3,6 +3,9 @@ en:
     placeholders:
       quote:
         name: Name of your quote
+      user:
+        email: Your email
+        password: Your password
     labels:
       quote:
         name: Name

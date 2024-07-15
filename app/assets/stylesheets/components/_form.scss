@@ -25,4 +25,12 @@
       border-color: var(--color-primary);
     }
   }
+
+  &__login {
+    flex-direction: column;
+
+    input {
+      margin-top: var(--space-s);
+    }
+  }
 }
