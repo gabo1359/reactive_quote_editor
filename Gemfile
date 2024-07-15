@@ -71,3 +71,6 @@ end
 
 # Powerful components to create your forms
 gem "simple_form", "~> 5.1.0"
+
+# Flexible authentication
+gem "devise"
