@@ -50,6 +50,9 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+
+  # Avoid N + 1 queries or unnecessary eager loading and recommend counter cache use
+  gem 'bullet'
 end
 
 group :development do
